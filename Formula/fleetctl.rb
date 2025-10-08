@@ -5,13 +5,13 @@
 class Fleetctl < Formula
   desc "Fleet management CLI tool for edge device orchestration"
   homepage "https://fleetd.sh"
-  version "0.0.1-rc.4"
+  version "0.0.1-rc.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fleetd-sh/fleetd/releases/download/v0.0.1-rc.4/fleetctl_0.0.1-rc.4_darwin_amd64.tar.gz"
-      sha256 "3dc85b9e6366f41deb9e4ff0b29f8c57009b8f655a1d723b7db28c2700ace91a"
+      url "https://github.com/fleetd-sh/fleetd/releases/download/v0.0.1-rc.5/fleetctl_0.0.1-rc.5_darwin_amd64.tar.gz"
+      sha256 "a3589275481f6f6ab1a60d85a3d6429349b2e50f95ad1bb455222cb8ccb8f538"
 
       def install
         bin.install "fleetctl"
@@ -30,8 +30,8 @@ class Fleetctl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fleetd-sh/fleetd/releases/download/v0.0.1-rc.4/fleetctl_0.0.1-rc.4_darwin_arm64.tar.gz"
-      sha256 "77680816d7a0410b150b7935fe74355ba72322b01172dfa2bdaa36917763d911"
+      url "https://github.com/fleetd-sh/fleetd/releases/download/v0.0.1-rc.5/fleetctl_0.0.1-rc.5_darwin_arm64.tar.gz"
+      sha256 "c59046631762058dc0f1d9b71c82c42e0d7b89777e777b8ffbf19b8ba7b511c3"
 
       def install
         bin.install "fleetctl"
@@ -53,8 +53,8 @@ class Fleetctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fleetd-sh/fleetd/releases/download/v0.0.1-rc.4/fleetctl_0.0.1-rc.4_linux_amd64.tar.gz"
-      sha256 "4d4ae6ea340b718153b817abe4c92bc414a5020518db0fe99619998dbb5ac44d"
+      url "https://github.com/fleetd-sh/fleetd/releases/download/v0.0.1-rc.5/fleetctl_0.0.1-rc.5_linux_amd64.tar.gz"
+      sha256 "5a9b50b3d9945e765788fe7b3e7236dbfbdb39eff4844d396c98b79a7637880b"
       def install
         bin.install "fleetctl"
 
@@ -72,8 +72,8 @@ class Fleetctl < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fleetd-sh/fleetd/releases/download/v0.0.1-rc.4/fleetctl_0.0.1-rc.4_linux_arm64.tar.gz"
-      sha256 "9d67e9f9f8a644f6bb5d385eeb2ade7d7ab1ccd833daecc5ac6b5d8b634c5c56"
+      url "https://github.com/fleetd-sh/fleetd/releases/download/v0.0.1-rc.5/fleetctl_0.0.1-rc.5_linux_arm64.tar.gz"
+      sha256 "957c013ff1a85ca38814adb01fc0d3afaee824c1bb9fbbae303e34231a22d16a"
       def install
         bin.install "fleetctl"
 
